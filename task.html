@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        /* Text Alignment */
+        .align-left { text-align: left; }
+        .align-right { text-align: right; }
+        .align-center { text-align: center; }
+
+        /* Text Decoration */
+        .decoration-none { text-decoration: none; }
+        .decoration-underline { text-decoration: underline; }
+        .decoration-color { text-decoration: underline; text-decoration-color: blue; }
+        .decoration-style { text-decoration: underline; text-decoration-style: dashed; }
+        .decoration-line-through { text-decoration: line-through; }
+
+        /* Text Indentation */
+        .indent { text-indent: 30px; }
+
+        /* Text Transformation */
+        .transform-uppercase { text-transform: uppercase; }
+        .transform-lowercase { text-transform: lowercase; }
+        .transform-capitalize { text-transform: capitalize; }
+
+        /* Text Shadow */
+        .shadow { text-shadow: 2px 2px 4px rgb(120, 120, 120); }
+
+        /* Letter and Word Spacing */
+        .letter-spacing { letter-spacing: 3px; }
+        .word-spacing { word-spacing: 10px; }
+
+        /* Line Height */
+        .line-height-small { line-height: 1; }
+        .line-height-medium { line-height: 1.5; }
+        .line-height-large { line-height: 2; }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 class="shadow align-center">Welcome to My Profile</h1>
+        </header>
+
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p class="indent transform-capitalize">
+                Hi, I'm a web developer passionate about creating interactive and user-friendly web applications. 
+                I enjoy solving problems, learning new technologies, and working on exciting projects.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li class="letter-spacing line-height-medium">HTML</li>
+                <li class="letter-spacing line-height-medium">CSS</li>
+                <li class="letter-spacing line-height-medium">JavaScript</li>
+                <li class="letter-spacing line-height-medium">Python</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <h2>Contact</h2>
+            <p class="decoration-underline decoration-color">Email: example@example.com</p>
+            <p class="decoration-underline decoration-style">Phone: +123 456 7890</p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p class="align-right decoration-line-through">© 2024 My Profile</p>
+        </footer>
+    </div>
+</body>
+</html>

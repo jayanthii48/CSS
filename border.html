@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Examples</title>
+    <style>
+        .border-width-example {
+            border-width: 5px 10px 15px ; /* top right bottom left */
+            border-style: solid;
+            border-color: gray;
+            margin: 50px;
+        }
+
+        .border-style-example {
+            border-style: dotted dashed solid double; /* top right bottom left */
+            border-width: 5px;
+            border-color: blue;
+            width: 50px;
+            display: inline;
+        }
+
+        .border-color-example {
+            border-width: 5px;
+            border-style: solid;
+            border-color: red green blue yellow; /* top right bottom left */
+            display: inline;
+        }
+
+        .border-radius-example {
+            border: 5px solid black;
+            border-radius: 20px; /* Rounded corners */
+            display: inline;
+        }
+
+        .border-shorthand-example {
+            border: 5px dashed purple; /* Shorthand for width, style, and color */
+            
+        }
+
+        .border-individual-sides {
+            border-top: 5px solid red;
+            border-right: 10px dashed green;
+            border-bottom: 15px dotted blue;
+            border-left: 20px double orange;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <BR><BR>
+    <div class="border-width-example">
+        Example of `border-width` with different values for each side.
+    </div><BR><BR>
+    <div class="border-style-example">
+        Example of `border-style` with dotted, dashed, solid, and double styles.
+    </div>
+    <BR><BR>
+    <div class="border-color-example">
+        Example of `border-color` with red, green, blue, and yellow colors.
+    </div>
+    <BR><BR>
+    <div class="border-radius-example">
+        Example of `border-radius` with rounded corners.
+    </div>
+    <BR><BR>
+    <div class="border-shorthand-example">
+        Example of `border` shorthand with width, style, and color.
+    </div>
+    <BR><BR>
+    <div class="border-individual-sides">
+        Example of individual border sides with different styles and colors.
+    </div>
+    <BR><BR>
+</body>
+</html>

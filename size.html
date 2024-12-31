@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px; 
+            line-height: 1.5;
+        }
+
+        /* Example using px (pixels) */
+        .px-example {
+            background-color: lightblue;
+            width: 300px;  /* Fixed width in pixels */
+            height: 100px; /* Fixed height in pixels */
+            text-align: center;
+            line-height: 100px; /* Vertically centers the text */
+        }
+
+        /* Example using cm (centimeters) */
+        .cm-example {
+            background-color: lightgreen;
+            width: 10cm;  /* Fixed width in centimeters */
+            height: 5cm;  /* Fixed height in centimeters */
+            text-align: center;
+            line-height: 5cm; /* Vertically centers the text */
+        }
+
+        /* Example using mm (millimeters) */
+        .mm-example {
+            background-color: lightcoral;
+            width: 50mm;  /* Fixed width in millimeters */
+            height: 30mm; /* Fixed height in millimeters */
+            text-align: center;
+            line-height: 30mm; /* Vertically centers the text */
+        }
+
+        /* Example using in (inches) */
+        .in-example {
+            background-color: rgb(240, 240, 18);
+            width: 1in;  /* Fixed width in inches */
+            height: 2in; /* Fixed height in inches */
+            text-align: center;
+            line-height: 2in; /* Vertically centers the text */
+        }
+
+        /* Example using em (relative to the font size of the element) */
+        .em-example {
+            background-color: lightpink;
+            width: 20em;  /* Width relative to the font size of the element */
+            height: 10em; /* Height relative to the font size of the element */
+            text-align: center;
+            line-height: 10em; /* Vertically centers the text */
+        }
+
+        /* Example using rem (relative to the root font size) */
+        .rem-example {
+            background-color: lightgray;
+            width: 20rem;  /* Width relative to the root font size (16px) */
+            height: 10rem; /* Height relative to the root font size (16px) */
+            text-align: center;
+            line-height: 10rem; /* Vertically centers the text */
+        }
+
+        /* Example using % (percentage, relative to the parent element) */
+        .percent-example {
+            background-color: lightseagreen;
+            width: 50%;  /* 50% of the width of the parent element */
+            height: 50%; /* 50% of the height of the parent element */
+            text-align: center;
+            line-height: 50%; /* Vertically centers the text */
+        }
+
+        /* Example using vw (viewport width) */
+        .vw-example {
+            background-color: rgb(202, 17, 17);
+            width: 10vw;  /* 10% of the viewport width */
+            height: 10vh; /* 10% of the viewport height */
+            text-align: center;
+            line-height: 5vh; /* Vertically centers the text */
+        }
+
+        /* Example using vh (viewport height) */
+        .vh-example {
+            background-color: lightsteelblue;
+            width: 20vw;  /* 20% of the viewport width */
+            height: 20vh; /* 20% of the viewport height */
+            text-align: center;
+            line-height: 20vh; /* Vertically centers the text */
+        }
+
+        /* Example using vmin (smaller of viewport's width or height) */
+        .vmin-example {
+            background-color: lightpink;
+            width: 100vmin;  /* 10% of the smaller of the viewport's width or height */
+            height: 10vmin; /* 10% of the smaller of the viewport's width or height */
+            text-align: center;
+            line-height: 10vmin; /* Vertically centers the text */
+        }
+
+        /* Example using vmax (larger of viewport's width or height) */
+        .vmax-example {
+            background-color: rgb(8, 219, 219);
+            width: 10vmax;  /* 10% of the larger of the viewport's width or height */
+            height: 10vmax; /* 10% of the larger of the viewport's width or height */
+            text-align: center;
+            line-height: 10vmax; /* Vertically centers the text */
+        }
+
+        /* Example using ch (relative to the "0" character's width) */
+        .ch-example {
+            background-color: lightblue;
+            width: 2ch;  /* Width relative to the width of "0" character */
+            height: 10ch; /* Height relative to the width of "0" character */
+            text-align: center;
+            line-height: 10ch; /* Vertically centers the text */
+        }
+
+        /* Example using ex (relative to the height of the "x" character) */
+        .ex-example {
+            background-color: lightgreen;
+            width: 10ex;  /* Width relative to the height of "x" character */
+            height: 5ex;  /* Height relative to the height of "x" character */
+            text-align: center;
+            line-height: 5ex; /* Vertically centers the text */
+        }
+
+        /* Example using pt (points, 1pt = 1/72 of an inch) */
+        .pt-example {
+            background-color: lightcoral;
+            width: 30pt;  /* Fixed width in points */
+            height: 15pt; /* Fixed height in points */
+            text-align: center;
+            line-height: 15pt; /* Vertically centers the text */
+        }
+
+        /* Example using pc (picas, 1pc = 12pt) */
+        .pc-example {
+            background-color: rgb(166, 166, 16);
+            width: 5pc;  /* Fixed width in picas */
+            height: 2pc; /* Fixed height in picas */
+            text-align: center;
+            line-height: 2pc; /* Vertically centers the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="px-example">300px x 100px</div>
+    <div class="cm-example">10cm x 5cm</div>
+    <div class="mm-example">50mm x 30mm</div>
+    <div class="in-example">3in x 2in</div>
+    <div class="em-example">20em x 10em</div>
+    <div class="rem-example">20rem x 10rem</div>
+    <div class="percent-example">50% x 50%</div>
+    <div class="vw-example">10vw x 10vh</div>
+    <div class="vh-example">20vw x 20vh</div>
+    <div class="vmin-example">10vmin x 10vmin</div>
+    <div class="vmax-example">10vmax x 10vmax</div>
+    <div class="ch-example">20ch x 10ch</div>
+    <div class="ex-example">10ex x 5ex</div>
+    <div class="pt-example">30pt x 15pt</div>
+    <div class="pc-example">5pc x 2pc</div>
+</body>
+</html>

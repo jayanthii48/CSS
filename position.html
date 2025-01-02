@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Examples</title>
+  <style>
+    /* Static Position */
+    .static-div {
+      position: static;
+      background-color: lightgray;
+      padding: 10px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    /* Relative Position */
+    .relative-div {
+      position: relative;
+      top: 20px;
+      left: 10px;
+      background-color: lightblue;
+      padding: 10px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    /* Absolute Position */
+    .absolute-container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: lightgray;
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    .absolute-div {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      background-color: lightgreen;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    /* Fixed Position */
+    .fixed-div {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: lightcoral;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    /* Sticky Position */
+    .sticky-div {
+      position: sticky;
+      top: 0;
+      background-color: lightgoldenrodyellow;
+      padding: 10px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    /* Z-Index */
+    .z-index-low {
+      position: absolute;
+      top: 300px;
+      left: 50px;
+      z-index: 0;
+      background-color: lightgray;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .z-index-high {
+      position: absolute;
+      top: 310px;
+      left: 60px;
+      z-index: 0;
+      background-color: lightpink;
+      padding: 10px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Position Examples</h1>
+
+  <!-- Static -->
+  <div class="static-div">Static Position</div>
+
+  <!-- Relative -->
+  <div class="relative-div">Relative Position</div>
+
+  <!-- Absolute -->
+  <div class="absolute-container">
+    <div class="absolute-div">Absolute Position</div>
+  </div>
+
+  <!-- Fixed -->
+  <div class="fixed-div">Fixed Position</div>
+
+  <!-- Sticky -->
+  <div class="sticky-div">Sticky Position</div>
+  <p>Scroll down to see the sticky effect in action.</p>
+  <div style="height: 2000px;">Content below</div>
+
+  <!-- Z-Index -->
+  <div class="z-index-low">Z-Index: 1</div>
+  <div class="z-index-high">Z-Index: 10</div>
+</body>
+</html>

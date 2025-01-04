@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Examples</title>
+  <style>
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 5px;
+      background-color: lightblue;
+    }
+    .container {
+      border: 2px dashed gray;
+      padding: 10px;
+      margin: 10px;
+    }
+    .hidden {
+      background-color: lightcoral;
+      color: white;
+    }
+    .list-item {
+      list-style: square;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <p> Example 8: table </p>
+  <div class="container" style="display: table;">
+    <p>1ST</p>
+    <div class="box" style="display: table-row;">
+      <div class="box" style="display: table-cell;">Table Cell 1</div>
+      <div class="box" style="display: table-cell;">Table Cell 2</div>
+    </div>
+  </div>
+
+  <p>Example 9: none </p>
+  <div class="box hidden" style="display: none;">Hidden element</div>
+
+  <p> Example 10: contents </p>
+  <div class="container" style="display: contents;">
+    <div></div>
+    <div class="box">
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        <p>PARAGRAPH</p>
+        
+    </div>
+    <div class="box">Contents 2</div>
+  </div>
+
+  <p> Example 11: list-item </p>
+  <ul>
+    <li class="box list-item" style="display: list-item;">List Item</li>
+  </ul>
+
+</body>
+</html>

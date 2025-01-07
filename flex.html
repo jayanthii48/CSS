@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    /* 1. Display Flex */
+    .flex-container {
+      display: flex;
+      flex-direction: row; /* 2. flex-direction */
+      flex-wrap: nowrap; /* 3. flex-wrap */
+      justify-content: center; /* 4. justify-content */
+    /* 6. align-content*/
+      height: 300px; 
+      border: 2px solid #000;
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: lightblue;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+    <div class="flex-item">Item 5</div>
+  </div>
+  
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align-items vs Align-content</title>
+  <style>
+    /* Flex container */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping */
+      height: 300px;   /* Height to see the effect of alignment */
+      border: 2px solid black;
+      flex-direction: column;
+    }
+
+    /* Flex items */
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Align items vertically using align-items */
+    .align-items-example {
+      align-items:end; /* Align items vertically in the container */
+    }
+
+    /* Align rows of items using align-content */
+    .align-content-example {
+      align-content:end; /* Space between rows */
+    }
+  </style>
+</head>
+<body>
+
+   
+  <h3>align-items: center;</h3>
+  <div class="flex-container align-items-example">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+  <h3>align-content: space-between;</h3>
+  <div class="flex-container align-content-example">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+    <div class="flex-item">D</div>
+    <div class="flex-item">E</div>
+  </div>
+
+</body>
+</html> -->

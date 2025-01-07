@@ -14,11 +14,33 @@
             box-sizing: border-box; /* Includes padding and border in the element's total width and height */
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        .container {
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */         
+            background-color: #6a3e3e; /* Optional background color */
+        }
+
+        p {
+            font-size: 20px; /* Optional styling for the text */
+            color: #333;     /* Optional text color */
+        }
+
     </style>
 </head>
 <body>
     <div class="box">
         This is an example of the CSS box model.
     </div>
+    <div class="container">
+        <p>Centered content</p>
+        <div class="containers">
+            <p>helo</p>
+        </div>
+    </div>
+    <div class="container">
+        <p>Centered content</p>
+    </div>
+    
 </body>
 </html>

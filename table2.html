@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .table {
+        display: table;
+        width: 100%;               
+        border: 1px solid black;  
+        border-spacing: 15px;     
+        table-layout: fixed;      
+      }
+      
+      .caption {
+        display: table-caption;
+        caption-side: top;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      .row {
+        display: table-row;
+      }
+      
+      .cell {
+        display: table-cell;
+        border: 1px solid gray;   
+        padding: 10px;
+        text-align: left;
+        white-space: nowrap;      
+        /* overflow: hidden; */
+      }
+      </style>
+</head>
+<body>
+    <div class="table">
+        <div class="caption">Table with Border-Spacing and Table-Layout</div>
+        <div class="row">
+          <div class="cell">Short</div>
+          <div class="cell">This is a long text that shows how table-layout works with fixed spacing.</div>
+        </div>
+        <div class="row">
+          <div class="cell">Another Short</div>
+          <div class="cell">Here is another example of a longer text in the table cell.</div>
+        </div>
+      </div>
+</body>
+</html>

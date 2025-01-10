@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .table {
+  display: table;
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.caption {
+  display: table-caption;
+  caption-side:top;
+}
+
+.column-group {
+  display: table-column-group;
+}
+
+.column {
+  display: table-column;
+}
+
+.header-group {
+  display: table-header-group;
+  background-color: #e37979;
+}
+.table .cell:empty {
+  background-color: #3d49a8; 
+  content: "";
+}
+.row-group {
+  display: table-row-group;
+  background-color: aquamarine;
+}
+
+.footer-group {
+  display: table-footer-group;
+  background-color: #f9f9f9;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  border: 1px solid rgb(8, 4, 254);
+  padding: 10px;
+  text-align: left;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="caption">Table Caption</div>
+        
+        <div class="header-group">
+          <div class="row">
+            <div class="cell">Header 1</div>
+            <div class="cell">Header 2</div>
+          </div>
+        </div>
+        
+        <div class="column-group">
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+        
+        <div class="row-group">
+          <div class="row">
+            <div class="cell">Row 1, Cell 1</div>
+            <div class="cell">Row 1, Cell 2</div>
+          </div>
+          <div class="row">
+            <div class="cell">Row 2, Cell 1</div>
+            <div class="cell">Row 2, Cell 2</div>
+          </div>
+          <div class="row">
+            <div class="cell">Row 3, Cell 1</div>
+            <div class="cell">Row 3, Cell 2</div>
+          </div>
+        </div>
+        
+        <div class="footer-group">
+          <div class="row">
+            <div class="cell">Footer 1</div>
+            <div class="cell">Footer 2</div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

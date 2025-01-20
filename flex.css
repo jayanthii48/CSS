@@ -2,18 +2,19 @@
     background-color: aquamarine;
     border: 2px solid black;
     display: flex;
-    height: 300px;
-    flex-direction: row;
-    flex-wrap: wrap-reverse; 
-    justify-content: space-evenly;  
-    align-content: stretch;
+    height: 400px;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: column-reverse; */
+    /* height: 300px;*/
+    /* justify-content: space-evenly;   */
+    /* align-items: start; 
 }
 .container div{
     background-color: bisque;
     border: 1px solid black;
     margin: 10px;
     padding: 20px;
-} */
+} */ 
 /* .container{
     background-color: aquamarine;
     border: 2px solid black;
@@ -40,16 +41,16 @@
     background-color: blue;
     padding: 50px;
     margin: 30px;
-} 
-
+}  */
+/* 
 .container .a{
-   flex-grow: 1;
+   align-self:flex-end;
 }
 .container .b{
-   flex-grow: 2;
+    flex-grow: 2 ;
 }
 .container .c{
-   flex-grow: 0;
+    flex-grow: 2 ;
 }  */
 .container{
     background-color: aquamarine;
@@ -57,11 +58,11 @@
     display: flex;
 }
 .item1{
-    background-color: blue;
+    background-color: rgb(87, 87, 179);
     width: 100%;
     height: 100px;
-    flex-shrink: 7;
-    align-self: end;
+    flex-shrink: 1;
+    /* align-self: end; */
 }
 .item2{
     background-color: brown;

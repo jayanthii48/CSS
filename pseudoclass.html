@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pseudo-classes Example</title>
+    <style>
+        .demo{
+            margin: 50px;
+            background-color: aqua;
+        }
+        .demo:hover {
+            background-color: blue;
+            color: white;
+        }
+        div{
+            margin: 50px;
+        }
+        input:focus {
+            outline: 2px solid green;
+            background-color: #2c73b1;
+        }
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <button class="demo">Hover over me</button>
+
+    <div>
+        <label for="focusInput">Focus on this input:</label>
+        <input id="focusInput" type="text" placeholder="Click to focus">
+    </div><br><br><br><br>
+
+    <div>
+        <a href="#">Click me (active state)</a>
+    </div>
+</body>
+</html>

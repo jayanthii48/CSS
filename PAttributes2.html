@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Example</title>
+    <style>
+        
+        p::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+       
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<p>This is a sample paragraph to demonstrate first-line and first-letter pseudo-elements.</p>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Example</title>
+    <style>
+        
+        /* ::selection {
+            background-color: yellow;
+            color: black;
+            text-decoration:underline;
+        } */
+        ul li::marker {
+            color: red;
+            font-size: 20px;
+        }
+        /* p:hover::first-letter {
+            color: rgb(233, 217, 217);
+            font-size: 20px;
+        }
+       */
+        [disabled] {
+            background-color: green;
+        }
+
+        [data-info="yes"] {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<p>Select some text in this paragraph to see the ::selection effect.</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<p data-info="yes">This paragraph has a "data-info" attribute with the value "yes".</p>
+<p data-info="no">This paragraph has a "data-info" attribute with the value "no".</p>
+<label for="name">ENTER A NAME</label>
+<input type="text" id="name" disabled>
+</body>
+</html>

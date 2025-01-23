@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link and Advanced Pseudo-classes</title>
+    <style>
+        
+        a:link {
+            color: rgb(123, 240, 39); 
+        }
+        a:visited {
+            color: rgb(247, 216, 216); 
+        }
+
+        #section1:target {
+            background-color: yellow;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        
+        :root {
+            --primary-color: blue;
+        }
+        body {
+            color: var(--primary-color);
+        }
+
+       
+        p:first-of-type {
+            color: green;
+            font-weight: bold;
+        }
+        p:last-of-type {
+            color: orange;
+            font-style: italic;
+        }
+
+        p:only-of-type {
+            font-size: 20px;
+            background-color: lightgrey;
+        }
+
+    
+        div:nth-of-type(3) {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Link and Advanced Pseudo-classes</h1>
+
+
+    <h2>Links</h2>
+    <a href="#section1">Go to Section 1</a>
+    <a href="#section2">Go to Section 2</a>
+    <a href="https://example.com" target="_blank">External Link (Visit this for :visited)</a>
+
+    <div>
+        <p>Example of \</p>
+        <p>Example of \</p>
+        <p>Example of \</p>
+        <p>Example of \</p>
+    </div>
+    <h2>Target</h2>
+    <div id="section1">This is Section 1. It highlights when targeted.</div>
+    <div id="section2">This is Section 2. It highlights when targeted.</div>
+    
+
+   
+    <h2>Root</h2>
+    <p>The primary color is defined in :root and applied to the text.</p>
+
+   
+    <h2>First and Last of Type</h2>
+    <p>This is the first paragraph in this section.</p>
+    <p>This is another paragraph.</p>
+    <p>This is the last paragraph in this section.</p>
+
+   
+    <h2>Only of Type</h2>
+    <div>
+        <p>This is the only paragraph inside its parent div.</p>
+    </div>
+
+    
+    <h2>Nth of Type</h2>
+    <div>First div</div>
+    <div>Second div</div>
+    <div>Third div (Styled by nth-of-type)</div>
+
+
+</body>
+</html>

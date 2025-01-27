@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Places Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px;
+      border-radius: 4px;
+    }
+
+    /* Pseudo-class for Link */
+    nav a:link {
+      color: white;
+    }
+
+    nav a:visited {
+      color: #ddd;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: #333;
+    }
+
+    nav a:active {
+      background-color: #bbb;
+      color: white;
+    }
+
+    /* Navigation Menu Hover and Focus Effects */
+    nav a:focus {
+      outline: none;
+      background-color: #666;
+      color: white;
+    }
+
+    section {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .place {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
+      width: 300px;
+
+    }
+
+
+    .place a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .place a:hover {
+      color: #2c6f2f;
+    }
+
+    /* Pseudo-classes for First, Last, and Nth-Child */
+    .place:first-child {
+      border-left: 5px solid #4CAF50;
+    }
+
+    .place:last-child {
+      border-right: 5px solid #4CAF50;
+    }
+
+    .place:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    .place:nth-child(even) {
+      background-color: #e9e9e9;
+    }
+
+    /* Detailed Description (Target) */
+    .place-description {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fafafa;
+      border-radius: 5px;
+    }
+
+    .place-description:target {
+      display: inline-block;
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tourist Places Guide</h1>
+    <p>Explore the most amazing tourist spots around the world.</p>
+  </header>
+
+  <nav>
+    <a href="#paris">Paris</a>
+    <a href="#london">London</a>
+    <a href="#newyork">New York</a>
+    <a href="#tokyo">Tokyo</a>
+  </nav>
+
+  <section>
+    <div class="place" id="paris">
+      <h2>Paris, France</h2>
+      <p>The City of Lights, known for its iconic Eiffel Tower and rich history.</p>
+      <a href="#paris-description">Read more</a>
+      <div class="place-description" id="paris-description">
+        <p>Paris is known for its museums, parks, and landmarks like the Louvre and Notre Dame.</p>
+      </div>
+    </div>
+
+    <div class="place" id="london">
+      <h2>London, UK</h2>
+      <p>Home to the majestic Big Ben and the Tower of London.</p>
+      <a href="#london-description">Read more</a>
+      <div class="place-description" id="london-description">
+        <p>London boasts iconic landmarks like Buckingham Palace, the London Eye, and many museums.</p>
+      </div>
+    </div>
+
+    <div class="place" id="newyork">
+      <h2>New York, USA</h2>
+      <p>The city that never sleeps, famous for Times Square and Central Park.</p>
+      <a href="#newyork-description">Read more</a>
+      <div class="place-description" id="newyork-description">
+        <p>New York is a bustling metropolis with iconic landmarks such as the Statue of Liberty and Empire State Building.</p>
+      </div>
+    </div>
+
+    <div class="place" id="tokyo">
+      <h2>Tokyo, Japan</h2>
+      <p>Known for its modern architecture and ancient temples.</p>
+      <a href="#tokyo-description">Read more</a>
+      <div class="place-description" id="tokyo-description">
+        <p>Tokyo blends traditional shrines like Sensoji with futuristic skyscrapers and technology-driven attractions.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

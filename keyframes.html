@@ -1,0 +1,132 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes Animation Example</title>
+  <style>
+   
+    @keyframes textAnimation {
+      from {
+        color: red;              
+        font-size: 14px;         
+        font-style: normal;       
+       
+      }
+      25% {
+        color: blue;              
+        font-size: 18px;         
+        font-style: italic;       
+       
+      }
+      50% {
+        color: green;             
+        font-size: 22px;          
+        font-style: bold;         
+       
+      }
+      75% {
+        color: purple;           
+        font-size: 26px;          
+        font-style: normal;       
+       
+      }
+      to {
+        color: orange;            
+        font-size: 30px;          
+        font-style: italic;       
+        
+      }
+    }
+
+    .element {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      animation: textAnimation 5s ease-in-out infinite; 
+      /* animation-direction: alternate; */
+      /* animation-fill-mode:forwards; */
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="element">This is animated text!</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Fill Mode Example</title>
+  <style>
+   
+    @keyframes moveAndChangeColor {
+      25% {
+        transform: translateX(0) translateY(0);    
+        background-color: red;        
+      }
+      50% {
+        transform: translateX(300px)translateY(0);  
+        background-color: green;      
+      }
+      75% {
+        transform: translateX(300px)translateY(300px);  
+        background-color: green;      
+      }
+      100% {
+        transform: translateX(0px)translateY(300px);  
+        background-color: green;      
+      }
+    } 
+
+     /* .box {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      animation: moveAndChangeColor 3s ease-in-out 4s infinite; 
+      animation-fill-mode: forwards; 
+      animation-direction:alternate;
+    } */
+
+     .box {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      animation: moveAndChangeColor 2s linear infinite;
+      /* animation-play-state:running; */
+    }
+
+    .box:hover {
+      animation-play-state: paused;
+    }
+
+
+    /* .box2 {
+      width: 100px;
+      height: 100px;
+      animation: moveAndChangeColor 3s ease-in-out 2s; 
+      animation-fill-mode: backwards; 
+      margin-top: 150px;
+    }
+
+    .box3 {
+      width: 100px;
+      height: 100px;
+      animation: moveAndChangeColor 3s ease-in-out; 
+      animation-fill-mode: both; 
+      margin-top: 150px;
+    } */
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+
+</body>
+</html>
+

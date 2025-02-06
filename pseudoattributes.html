@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-elements Example</title>
     <style>
-        /* .example1::before {
-            content: "Before: "; 
+        .example1::after{
+            content: "insert before "; 
             font-weight: bold;
-        } */
+        }
         .example1::selection{
             color: rgb(251, 31, 12);
+            background-color: aqua;
         }
         .example2::after {
             content: url('')
@@ -22,7 +23,7 @@
 </head>
 <body>
 
-<p class="example1">This is a paragraph.This is a paragraph.This is a paragraph.</p>
+<p class="example1">This is a paragraph.</p>
 <p class="example2">This paragraph has an image after it.</p>
 <p class="example3">This paragraph has a numbered prefix.</p>
 <p class="example4" style="color: aqua;" name="exam">This paragraph uses the attribute content.</p>

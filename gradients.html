@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .demo1 {
+            background: linear-gradient(to left, rgb(204, 255, 0), rgb(0, 21, 255),red);
+        }
+        .demo2 {
+            background: linear-gradient(45deg, rgb(252, 252, 252), purple ,red);
+        }
+        .demo3 {
+            background: linear-gradient(to bottom, orange , pink , cyan);
+        }
+
+        
+        .demo4 {
+            background: repeating-linear-gradient(to bottom, rgb(255, 0, 191), rgb(176, 254, 99) 10px, blue 20px);
+        }
+
+        .demo5 {
+            background: radial-gradient(circle at bottom, rgb(179, 255, 0), rgb(19, 220, 180), green,purple);
+        }
+        .demo6 {
+            background: radial-gradient(ellipse at center, blue, cyan, white);
+        }
+
+        .demo7 {
+            background: repeating-radial-gradient(circle, red, yellow 10%, blue 20%);
+        }
+
+    
+        .demo8 {
+            background: conic-gradient(red, yellow, green,blue);
+        }
+        .demo9 {
+            background: conic-gradient(from 0deg, red 0deg 120deg, yellow 120deg 240deg, blue 240deg 360deg);
+        }
+
+        .demo10 {
+            background: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradient Demos</h1>
+    <div class="container">
+        <div class="box demo1">Linear Gradient (Left to Right)</div>
+        <div class="box demo2">Linear Gradient (45° Diagonal)</div>
+        <div class="box demo3">Linear Gradient (Bottom Flow)</div>
+        <div class="box demo4">Repeating Linear Gradient</div>
+        <div class="box demo5">Radial Gradient (Circle)</div>
+        <div class="box demo6">Radial Gradient (Ellipse)</div>
+        <div class="box demo7">Repeating Radial Gradient</div>
+        <div class="box demo8">Conic Gradient (Basic)</div>
+        <div class="box demo9">Conic Gradient (Pie Chart)</div>
+        <div class="box demo10">Repeating Conic Gradient</div>
+    </div>
+</body>
+</html>

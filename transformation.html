@@ -1,0 +1,132 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      perspective: 1000px;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #3498db;
+      transform-style: preserve-3d;
+      transition: transform 1s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .box1:hover {
+      transform: translateX(100px); 
+      /* transform: translateX(100px) translateY(50px) translateZ(50px);  */
+    }
+
+   
+    .box2:hover {
+      transform: translateY(50px);
+    }
+
+   
+    .box3:hover {
+      transform: translateZ(200px);
+    }
+
+    
+    .box4:hover {
+      transform: rotateX(45deg);
+    }
+
+    
+    .box5:hover {
+      transform: rotateY(30deg);
+    }
+
+   
+    .box6:hover {
+      transform: rotateZ(60deg);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box box1">translateX</div>
+  <div class="box box2">translateY</div>
+  <div class="box box3">translateZ</div>
+  <div class="box box4">rotateX</div>
+  <div class="box box5">rotateY</div>
+  <div class="box box6">rotateZ</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      perspective: 500px;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #3498db;
+      transform-style: preserve-3d;
+      transition: transform 1s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .box1:hover {
+      transform: scaleX(1.5);
+    }
+
+    .box2:hover {
+      transform: scaleY(0.5);
+    }
+
+    .box3:hover {
+      transform: rotateY(45deg) scaleZ(2);
+    }
+
+    .box4:hover {
+      transform: skewX(20deg);
+    }
+
+    .box5:hover {
+      transform: skewY(20deg);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box box1">scaleX</div>
+  <div class="box box2">scaleY</div>
+  <div class="box box3">scaleZ</div>
+  <div class="box box4">skewX</div>
+  <div class="box box5">skewY</div>
+</body>
+</html>

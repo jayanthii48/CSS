@@ -9,31 +9,31 @@
     @keyframes textAnimation {
       from {
         color: red;              
-        font-size: 14px;         
+        /* font-size: 14px;          */
         font-style: normal;       
        
       }
       25% {
         color: blue;              
-        font-size: 18px;         
+        /* font-size: 18px;          */
         font-style: italic;       
        
       }
       50% {
         color: green;             
-        font-size: 22px;          
+        /* font-size: 22px;           */
         font-style: bold;         
        
       }
-      75% {
+      60% {
         color: purple;           
-        font-size: 26px;          
+        /* font-size: 26px;           */
         font-style: normal;       
        
       }
       to {
         color: orange;            
-        font-size: 30px;          
+        /* font-size: 30px;           */
         font-style: italic;       
         
       }
@@ -42,7 +42,10 @@
     .element {
       font-family: Arial, sans-serif;
       font-weight: bold;
-      animation: textAnimation 5s ease-in-out infinite; 
+      animation-name: textAnimation;
+      animation-duration: 5s;
+      animation-iteration-count: 3;
+      /* animation: textAnimation 5s ease-in-out infinite;  */
       /* animation-direction: alternate; */
       /* animation-fill-mode:forwards; */
       text-align: center;
@@ -65,47 +68,47 @@
   <style>
    
     @keyframes moveAndChangeColor {
-      25% {
+     25% {
         transform: translateX(0) translateY(0);    
-        background-color: red;        
+        color: red;        
       }
       50% {
-        transform: translateX(300px)translateY(0);  
-        background-color: green;      
+        transform: translateX(300px)translateY(0px);  
+        color: green;      
       }
       75% {
         transform: translateX(300px)translateY(300px);  
-        background-color: green;      
+        color: green;      
       }
       100% {
         transform: translateX(0px)translateY(300px);  
-        background-color: green;      
+        color: green;      
       }
     } 
+    
+
+     .box {
+      /* width: 100px;
+      height: 100px;
+      background-color: aqua; */
+      animation: moveAndChangeColor 3s ease-in-out  infinite; 
+      animation-fill-mode: forwards; 
+      animation-direction:alternate;
+    }
 
      /* .box {
       width: 100px;
       height: 100px;
       background-color: aqua;
-      animation: moveAndChangeColor 3s ease-in-out 4s infinite; 
-      animation-fill-mode: forwards; 
-      animation-direction:alternate;
-    } */
-
-     .box {
-      width: 100px;
-      height: 100px;
-      background-color: aqua;
       animation: moveAndChangeColor 2s linear infinite;
       /* animation-play-state:running; */
+    
+   .box:hover {
+      animation-play-state: running;
     }
 
-    .box:hover {
-      animation-play-state: paused;
-    }
 
-
-    /* .box2 {
+    .box2 {
       width: 100px;
       height: 100px;
       animation: moveAndChangeColor 3s ease-in-out 2s; 
@@ -118,14 +121,14 @@
       height: 100px;
       animation: moveAndChangeColor 3s ease-in-out; 
       animation-fill-mode: both; 
-      margin-top: 150px;
-    } */
+      margin-top: 150px; 
+    } 
   </style>
 </head>
 <body>
-  <div class="box"></div>
-  <div class="box2"></div>
-  <div class="box3"></div>
+  <div class="box">red</div>
+  <!-- <div class="box2"></div>
+  <div class="box3"></div> -->
 
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: rgba(204, 9, 149, 0.2);
+        }
+        .container {
+            padding: 20px;
+        }
+        .filtered-img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+            transition: 0.3s;
+        }
+        .blur {
+            filter: blur(4px);
+        }
+        .brightness {
+            filter: brightness(150%);
+        }
+        .contrast {
+            filter: contrast(150%);
+        }
+        .grayscale {
+            filter: grayscale(100%);
+        }
+        .hover-effect:hover {
+            filter: hue-rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <img src="ad1.jpeg" alt="Blur" class="filtered-img blur">
+        <img src="ad1.jpeg" alt="Brightness" class="filtered-img brightness">
+        <img src="ad1.jpeg" alt="Contrast" class="filtered-img contrast">
+        <img src="ad1.jpeg" alt="Grayscale" class="filtered-img grayscale">
+        <img src="ad1.jpeg" alt="Hover Effect" class="filtered-img hover-effect">
+    </div>
+    
+</body>
+</html>

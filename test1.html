@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menubutton{
+            background-color: aquamarine;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+        }
+        .main{
+            position: relative;
+            display: flex;
+        }
+        .list{
+            position: absolute;
+            display: none;
+            padding-top:35px;
+            padding-left:35px;
+            margin:0px;  
+            width: 100px;
+        }
+        .main:hover .list {
+            display: inline;
+        }
+        li{
+            border-bottom: 1px solid wheat;
+            padding: 10px;
+            list-style: none;
+            background-color: rgb(228, 228, 233);
+        }
+        a{
+            text-decoration: none;
+            color:rgb(3, 114, 34);
+        }
+        li:hover{
+            background-color: rgb(164, 233, 236);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="menubutton">Menu</button>
+        <ul class="list">
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item1</a></li>
+        </ul>
+    </div>
+</body>
+</html>

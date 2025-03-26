@@ -15,25 +15,25 @@
         .container {
             padding: 20px;
         }
-        .filtered-img {
+        .filter {
             width: 300px;
             height: auto;
             margin: 20px;
             transition: 0.3s;
         }
-        .blur {
+        .ex1 {
             filter: blur(4px);
         }
-        .brightness {
+        .ex2 {
             filter: brightness(150%);
         }
-        .contrast {
+        .ex3 {
             filter: contrast(150%);
         }
-        .grayscale {
+        .ex4 {
             filter: grayscale(100%);
         }
-        .hover-effect:hover {
+        .ex5:hover {
             filter: hue-rotate(180deg);
         }
     </style>
@@ -41,11 +41,11 @@
 <body>
     <div class="container">
         
-        <img src="ad1.jpeg" alt="Blur" class="filtered-img blur">
-        <img src="ad1.jpeg" alt="Brightness" class="filtered-img brightness">
-        <img src="ad1.jpeg" alt="Contrast" class="filtered-img contrast">
-        <img src="ad1.jpeg" alt="Grayscale" class="filtered-img grayscale">
-        <img src="ad1.jpeg" alt="Hover Effect" class="filtered-img hover-effect">
+        <img src="ad1.jpeg" alt="Blur" class="filter ex1" >
+        <img src="ad1.jpeg" alt="Brightness" class="filter ex2">
+        <img src="ad1.jpeg" alt="Contrast" class="filter ex3">
+        <img src="ad1.jpeg" alt="Grayscale" class="filter ex4">
+        <img src="ad1.jpeg" alt="Hover Effect" class="filter ex5">
     </div>
     
 </body>
